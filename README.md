@@ -16,6 +16,12 @@ With our HPO experiments we also identified a mutation rate of 0.3% as a general
 number of fitness evaluations until the CGP algorithm terminated.
 We defined a limit of 10^8 fitness evaluations for our experiments.
 
+Since the majority of the problems are typically implemented with
+XOR gates, we propose the use of a reduced function set {BUFa,
+NOTa, AND, OR} for the easier problems to increase the difficulty of the evolutionary search. For more complex problems, we recommend an extended function set {BUFa, NOTa, AND, OR, XOR,
+NAND, NOR, XNOR}. For cryptographic benchmarks set {AND,
+XOR, OR, XNOR, INHb} should be used. 
+
 
 ![alt text](https://github.com/boolean-function-benchmarks/results/blob/main/baseline_results_cgp.png)
 
